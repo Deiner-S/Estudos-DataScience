@@ -47,6 +47,7 @@ app.layout = html.Div([
         dcc.Graph(figure=gr.vendasMes(df)),
         dcc.Graph(figure=gr.MédiasEditora(df)),
         dcc.Graph(figure=gr.graficoSetores(df)),
+        dcc.Graph(figure=gr.online()),
         
     ], style={
     'display': 'flex',
@@ -74,6 +75,7 @@ app.layout = html.Div([
         dcc.Graph(figure=fto.FechamentoMes(df)),
         dcc.Graph(figure=fto.MédiasEditora(df)),
         dcc.Graph(figure=fto.graficoSetores(df)),
+        dcc.Graph(figure=fto.online())
         
     ], style={
     'display': 'flex',

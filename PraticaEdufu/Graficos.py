@@ -78,3 +78,25 @@ def graficoSetores(df):
     )
 
     return fig
+
+def online():
+    dados = {
+    "Canal de Venda": ["ONLINE", "FÍSICA"],
+    "Total de Vendas": [87, 249]
+    }
+
+    # Criar DataFrame
+    df = pd.DataFrame(dados)
+
+    # Criar gráfico de setores
+    fig = px.pie(
+        df,
+        names="Canal de Venda",
+        values="Total de Vendas",
+        title="Distribuição das Vendas por Canal",
+        color_discrete_map={
+        "ONLINE": '#4A90E2',
+        "FÍSICA": '#002F6C'
+        },
+    )
+    return fig
