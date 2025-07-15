@@ -14,9 +14,9 @@ app.layout = html.Div([
     html.H1('Painel de Desempenho financeiro'),
     
     html.Div([
-        html.Button("Vendas", id= "btn-1",n_clicks=0, className="button"),
-        html.Button("Receita", id= "btn-2",n_clicks=0, className="button")
-    ],style={"matginBottom":"20px"}),
+        html.Button("Vendas", id= "btn-1",n_clicks=0, className="button hover"),
+        html.Button("Receita", id= "btn-2",n_clicks=0, className="button hover")
+    ],className="div-button"),
 
     html.Div(id="dashboard-content")
 
