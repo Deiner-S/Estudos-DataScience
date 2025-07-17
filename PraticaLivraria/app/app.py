@@ -11,7 +11,8 @@ df = pd.read_csv(r"VENDAS2.csv")
 df["DATA"] = pd.to_datetime(df["DATA"]) 
 
 app.layout = html.Div([
-    html.H1('Painel de Desempenho financeiro'),
+
+    html.Header([html.H1('Painel de Desempenho financeiro')]),    
     
     html.Div([
         html.Button("Vendas", id= "btn-1",n_clicks=0, className="button hover"),

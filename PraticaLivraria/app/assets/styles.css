@@ -4,9 +4,14 @@ html, body {
     background-color: transparent;
     overflow-x: hidden; /* evita scroll horizontal */
 }
-
+header{
+    align-items: center;
+    background: linear-gradient(to top, #0A002E, #0C0064);
+    margin: 0;
+    padding: 10px;
+}
 h2{
-    background-color: rgb(50,50,50);
+    background: linear-gradient(to top, #0A002E, #0C0064);
     border-radius: 8px;
     margin-left: 11.5%;
     margin-right: 11.5%;
@@ -29,26 +34,25 @@ h2{
     background-position: top left;       
     min-height: 100vh;                    
     width: 100%;
-    padding: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     box-sizing: border-bo;
 }
 
 h1{
-    margin-left: 11%;
-    margin-right: 11%;
+    margin-left: 10%;
     color: #FFFFFF;
     text-align: left;
     font-size: 48px;
     font-weight: bold;
     font-family: Segoe UI, sans-serif;
-    padding: 30px;
     text-shadow: 1px 1px 4px #000;
     
 }
 
 .button{
     
-    background-color : rgb(50, 50, 50);  /* Cinza escuro ~70% */
+    background: linear-gradient(to top, #0A002E, #0C0064); 
     color: white;
     font-family: Segoe UI, sans-serif;
     border-radius: 8px;
@@ -61,13 +65,14 @@ h1{
 }
 
 .div-button{
+    margin-top: 5px;
     margin-left: 11.5%;
-    padding-left: 20px;
-    margin-bottom: 0;
+    padding-left: 0px;
+    margin-bottom: 5px;
 }
 
 .hover:hover{
-    background-color : rgb(70, 70, 70)
+    background: linear-gradient(to top, #0A002E, #0000); 
 }
 
 .dashboard{
